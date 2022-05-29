@@ -1,7 +1,9 @@
+import { Header } from "./pages/index";
+
 function App() {
   return (
-    <div className="bg-red-400">
-      <h1>hello world!</h1>
+    <div className="container mx-auto max-w-screen-2xl">
+      <Header />
     </div>
   );
 }
