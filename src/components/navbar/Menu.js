@@ -10,7 +10,7 @@ const Menu = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-around bg-sky-200 py-2 absolute  top-0 w-full backdrop-blur-xl bg-opacity-50">
+    <div className="flex items-center justify-around bg-sky-200 py-2 absolute  top-0 w-full backdrop-blur-xl bg-opacity-50 z-20">
       <MenuLinks isShowMenu={isShowMenu}/>
       <Hamburger isShowMenu={isShowMenu} setIsShowMenu={setIsShowMenu} />
       <button onClick={() => setIsShowMenu(false)} className={isShowMenu && "h-screen w-screen bg-gray-900/50 z-10 absolute top-0"}></button>

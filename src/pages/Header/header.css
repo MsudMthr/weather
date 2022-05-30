@@ -19,7 +19,7 @@
     left: 0;
     transform: translateX(-100%);
     opacity: 0;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .menu-link:hover::after {
@@ -36,7 +36,7 @@
     right: 0;
     transform: translateX(100%);
     opacity: 0;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .menu-link:hover::before {
@@ -56,8 +56,35 @@
 
 }
 
-/* .banner {
-    @apply h-screen;
-    background: url("../../assets/weatherBanner.png") center no-repeat ;
-    background-size: cover;
-} */
+.container-Banner-image {
+    border-radius: 36% 64% 79% 21% / 34% 51% 49% 66%  ;
+    background: #000;
+    @apply sm:w-72 sm:h-72 w-52 h-52;
+    animation: bgColor 15s infinite;
+}
+
+
+
+
+
+@keyframes bgColor {
+    0% {
+        background: orange;
+    }
+    35% {
+        background: #000
+    }
+    80% {
+        background: rgb(0, 89, 255);
+
+    }
+    100% {
+        background: orange;
+
+    }
+}
+
+.banner-image img{
+    border-radius:73% 27% 39% 61% / 53% 35% 65% 47%    ;
+    
+}
