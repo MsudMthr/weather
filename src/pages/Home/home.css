@@ -58,9 +58,11 @@
 
 .container-Banner-image {
     border-radius: 36% 64% 79% 21% / 34% 51% 49% 66%  ;
-    background: #000;
     @apply sm:w-72 sm:h-72 w-52 h-52;
-    animation: bgColor 15s infinite;
+    background: rgb(121,9,38);
+    background: linear-gradient(90deg, rgba(227, 18, 74, 0.844) 25%, rgba(147, 16, 176, 0.785) 59%, rgba(102,0,255,0.790375525210084) 100%);
+    background-size: 400% 100% ;
+    animation: bgColor 5s infinite alternate;
 }
 
 
@@ -68,19 +70,8 @@
 
 
 @keyframes bgColor {
-    0% {
-        background: orange;
-    }
-    35% {
-        background: #000
-    }
-    80% {
-        background: rgb(0, 89, 255);
-
-    }
-    100% {
-        background: orange;
-
+    to {
+        background-size: 100% 400%;
     }
 }
 

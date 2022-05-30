@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sedgwick+Ave&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
-@import "./pages/Header/header.css";
+@import "./pages/Home/home.css";
 
 /* set font for all  */
 html {

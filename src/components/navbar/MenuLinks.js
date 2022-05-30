@@ -1,6 +1,8 @@
 import React from "react";
 
-const MenuLinks = ({isShowMenu}) => {
+import { Link } from "react-router-dom";
+
+const MenuLinks = ({ isShowMenu }) => {
   return (
     <ul
       className={`menu-parent  ${
@@ -8,24 +10,24 @@ const MenuLinks = ({isShowMenu}) => {
       } `}
     >
       <li>
-        <a href="#" className="menu-link">
+        <Link to={'/search'} className="menu-link">
           Search
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="menu-link">
+        <Link to={'/myCity'} className="menu-link">
           My City
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="menu-link">
+        <Link to={'/services'} className="menu-link">
           Services
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="menu-link">
+        <Link to={'/contactUs'} className="menu-link">
           Contact us
-        </a>
+        </Link>
       </li>
     </ul>
   );
