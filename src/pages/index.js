@@ -1,3 +1,4 @@
 import Home from "./Home/Home";
-
-export { Home };
+import SearchPage from "./Search/Search";
+import Menu from "../components/navbar/Menu";
+export { Home , SearchPage ,Menu};

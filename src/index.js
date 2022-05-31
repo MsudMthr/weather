@@ -2,7 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import "./axios";
 import "./index.css";
+
+// import axios from "axios";
+
+// const axiosClient = axios.create();
+
+// axiosClient.defaults.baseURL = "https://api.openweathermap.org/data/2.5";
+
+// axiosClient.defaults.headers = {
+//   "Content-Type": "application/json",
+//   Accept: "application/json",
+// };
+
+// //All request will wait 2 seconds before timeout
+// axiosClient.defaults.timeout = 2000;
+
+// axiosClient.defaults.withCredentials = true;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

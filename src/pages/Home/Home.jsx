@@ -1,11 +1,10 @@
 import React from 'react';
-import Banner from '../../components/header/Banner';
-import Menu from '../../components/navbar/Menu';
+import Banner from '../../components/home/Banner';
+// import Menu from '../../components/navbar/Menu';
 
 const Header = () => {
     return (
         <header className='relative' >
-            <Menu />
             <Banner />
         </header>
     );

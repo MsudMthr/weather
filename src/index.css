@@ -1,23 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sedgwick+Ave&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sedgwick+Ave&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
 @import "./pages/Home/home.css";
+@import "./pages/Search/search.css";
 
 /* set font for all  */
 html {
-    font-family: 'Sedgwick Ave', cursive ; 
-    
+  font-family: "Sedgwick Ave", cursive;
 }
 
-
 .center {
-    @apply flex items-center justify-center
+  @apply flex items-center justify-center;
 }
 
 .shadow-tictoc {
-    text-shadow: 1px 0 red , 0 1px cyan;
+  text-shadow: 1px 0 red, 0 1px cyan;
 }
-/* .shadow-tictoc :hover{
-    text-shadow: 0 3px red , 3px 0 cyan;
-} */

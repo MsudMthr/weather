@@ -10,12 +10,19 @@ const Menu = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-around bg-sky-200 py-2 absolute  top-0 w-full backdrop-blur-xl bg-opacity-50 z-20">
-      <MenuLinks isShowMenu={isShowMenu}/>
+    <div className="absolute top-0 z-20 mx-auto flex w-full max-w-screen-2xl items-center  justify-around bg-sky-200 bg-opacity-50 py-2 backdrop-blur-xl">
+      <MenuLinks isShowMenu={isShowMenu} />
       <Hamburger isShowMenu={isShowMenu} setIsShowMenu={setIsShowMenu} />
-      <button onClick={() => setIsShowMenu(false)} className={isShowMenu && "h-screen w-screen bg-gray-900/50 z-10 absolute top-0"}></button>
+      <button
+        onClick={() => setIsShowMenu(false)}
+        className={
+          isShowMenu
+            ? "absolute top-0 z-10 h-screen w-screen bg-gray-900/50"
+            : ""
+        }
+      ></button>
       <Link to={"/"}>
-        <img src={icon} alt="weather" className="w-16 z-0" />{" "}
+        <img src={icon} alt="weather" className="z-0 w-16" />{" "}
       </Link>
     </div>
   );
