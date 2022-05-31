@@ -3,7 +3,7 @@ import React from "react";
 const Hamburger = ({ isShowMenu, setIsShowMenu }) => {
   return (
     <div
-      className={`hamburger-parent ${isShowMenu && "rotate-180 scale-0"}`}
+      className={`hamburger-parent ${isShowMenu && "rotate-180 "}`}
       onClick={() => setIsShowMenu(!isShowMenu)}
     >
       <span className={`hamburger-line  ${isShowMenu && "rotate-45"}`}></span>

@@ -10,6 +10,11 @@ const MenuLinks = ({ isShowMenu }) => {
       } `}
     >
       <li>
+        <Link to={'/'} className="menu-link">
+          Home
+        </Link>
+      </li>
+      <li>
         <Link to={'/search'} className="menu-link">
           Search
         </Link>

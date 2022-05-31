@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import fetchWeather from "./../../redux/getWeather/getWeatherAction";
 
 const SearchForm = () => {
   const [cityName, setCityName] = useState("");
   const dispatch = useDispatch();
-  const weather = useSelector(state => state.searchCity)
-    console.log(weather);
   const changeHandler = (event) => {
     setCityName(event.target.value);
   };

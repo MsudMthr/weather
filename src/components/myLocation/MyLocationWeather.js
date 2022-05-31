@@ -2,9 +2,9 @@ import React from "react";
 import { useSelector } from "react-redux";
 import DetailWeather from "../shared/DetailWeather";
 import WaitForSearch from "../shared/WaitForSearch";
-
-const SearchWeather = () => {
-  const weather = useSelector((state) => state.searchCity);
+const MyLocationWeather = () => {
+  const weather = useSelector((state) => state.myLocationWeather);
+  console.log(weather);
   return (
     <div className="">
       {weather.isLoading ? (
@@ -20,4 +20,4 @@ const SearchWeather = () => {
   );
 };
 
-export default SearchWeather;
+export default MyLocationWeather;

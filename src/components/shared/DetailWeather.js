@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import info from "../../assets/svg/info-svgrepo-com.svg";
-import axios from "axios";
 
 const DetailWeather = ({ weatherDetail }) => {
   const [icon, setIcon] = useState(null);
