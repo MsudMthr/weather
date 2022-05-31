@@ -16,13 +16,15 @@ const fetchWeather = (city) => {
   return (dispatch) => {
     dispatch(fetchWeatherRequest());
     axios
-      .get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+      )
       .then((response) => {
         const aboutWeather = response.data;
         dispatch(fetchWeatherSuccess(aboutWeather));
       })
       .catch((err) => {
-        const errMsg = err.message;
+        const errMsg = "search for valid city";
         dispatch(fetchWeatherFailure(errMsg));
       });
   };

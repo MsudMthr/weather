@@ -5,6 +5,7 @@ import WaitForSearch from "../shared/WaitForSearch";
 
 const SearchWeather = () => {
   const weather = useSelector((state) => state.searchCity);
+  console.log(weather);
   return (
     <div className="">
       {weather.isLoading ? (
@@ -13,7 +14,7 @@ const SearchWeather = () => {
         </div>
       ) : (
         <div>
-          <DetailWeather weatherDetail={weather.weather} />
+          <DetailWeather weatherDetail={weather} />
         </div>
       )}
     </div>

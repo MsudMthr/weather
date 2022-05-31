@@ -11,7 +11,7 @@
 }
 
 .search-gif {
-  border-radius: 23% 77% 42% 58% / 75% 14% 86% 25%   ;
+  border-radius: 23% 77% 42% 58% / 75% 14% 86% 25%;
 }
 
 .search-pic-weather {
@@ -30,5 +30,22 @@
   100% {
     top: 0;
   }
-  
+}
+
+.detail-section {
+  @apply mt-5 flex h-96 w-80 flex-col justify-between rounded-lg bg-slate-200 px-3 pt-10;
+}
+
+.notFoundImage {
+  @apply w-64;
+  animation: borderRadius 4s infinite alternate ease-in-out;
+}
+
+@keyframes borderRadius {
+  from {
+    border-radius: 76% 24% 76% 24% / 25% 28% 72% 75%;
+  }
+  to {
+    border-radius: 34% 66% 29% 71% / 54% 75% 25% 46%;
+  }
 }

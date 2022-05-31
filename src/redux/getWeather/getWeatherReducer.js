@@ -10,7 +10,6 @@ const fetWeatherReducer = (state = initialState, action) => {
     case "WEATHER_REQUEST":
       return {
         isLoading: true,
-        ...state,
         isSearching: true,
       };
     case "WEATHER_SUCCESS":
@@ -18,12 +17,14 @@ const fetWeatherReducer = (state = initialState, action) => {
         isLoading: false,
         weather: action.payload,
         isSearching: false,
+        
       };
     case "WEATHER_FAILURE":
       return {
         isLoading: false,
         error: action.payload,
         isSearching: false,
+        ...state,
       };
 
     default:

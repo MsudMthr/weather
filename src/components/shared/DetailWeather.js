@@ -10,15 +10,15 @@ const DetailWeather = ({ weatherDetail }) => {
     weather,
     sys: { country },
     main: { temp },
-  } = weatherDetail;
-
+  } = weatherDetail.weather;
+  console.log(weatherDetail);
   useEffect(() => {
     setIcon(
       `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`
     );
   }, [weather]);
   return (
-    <section className="mt-5 flex h-96 w-80 flex-col justify-between rounded-lg bg-slate-200 px-3 pt-10">
+    <section className="detail-section">
       <div className="flex items-center justify-around  ">
         <div className="relative flex w-auto">
           <h1 className="capitalize">{name}</h1>
@@ -32,7 +32,7 @@ const DetailWeather = ({ weatherDetail }) => {
         </h5>
       </div>
       <div className="center flex-col">
-        <img src={icon} alt="info" className="w-40 search-pic-weather" />
+        <img src={icon} alt="info" className="search-pic-weather w-40" />
         <img src={info} alt="info" className="ml-40 w-5 hover:animate-spin" />
       </div>
       <div className="flex h-20 flex-col justify-between">

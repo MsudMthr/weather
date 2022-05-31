@@ -35,6 +35,7 @@ const SearchForm = () => {
           value={cityName}
           onChange={changeHandler}
           placeholder="Search City "
+          required
         />
         <button className="btn-search">Search</button>
       </form>
